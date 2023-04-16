@@ -1,8 +1,5 @@
 /*******************************************
-*  FRBot - Learning FreeRice.com bot
-*  Version: 1.2
-*  Repository: https://github.com/eholcom/FreeRice
-*  Updated: March 15, 2021
+* This is a fork of a repository by eholcom: see https://github.com/eholcom/FreeRice
 *
 *  + Last updated to work with redesigned FreeRice website and to remove JQuery dependency; also added capitals and languages
 *
@@ -26,8 +23,8 @@
 
 function FRBot() {
 
-	this.runDuration = 2.5;  //Set to stop after this amount of time (in hours)
-	this.maxRice = -1;       //Set to a positive number to stop once that much rice has been collected
+	this.runDuration = 8.0;  //Set to stop after this amount of time (in hours)
+	this.maxRice = 10000;       //Set to a positive number to stop once that much rice has been collected
 	this.riceDonated = 0;    //Assuming 10 per correct answer
 	this.started = 0;        //Date/time the bot started
 	this.timeoutId = 0;      //Used internally
@@ -62,7 +59,7 @@ function FRBot() {
 	
 	this.getRice = function() {
 		var type = document.getElementsByClassName("rice-counter__category-text")[0].innerText, Answer;
-		var question   = document.getElementsByClassName("card-title")[0].innerHTML.split(" =")[0];
+		var question = document.getElementsByClassName("card-title")[0].innerHTML.split(" =")[0];
 				
 		this.riceDonated=parseInt(document.getElementsByClassName("rice-counter__value")[0].innerText);
 		

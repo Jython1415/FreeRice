@@ -1,4 +1,7 @@
 # FreeRice JavaScript Bot
+
+I MADE A CLONE OF THIS TO SEE HOW IT WORKED AND MAKE SOME MODIFICATIONS. IT WAS A WHILE AGO, SO I AM ARCHIVING THE REPOSITORY NOW. 2025-02-06.
+
 Learning JavaScript bot for freerice.com
 
 Originally based on this 1-liner that only does multiplication: 
